@@ -4,6 +4,10 @@
 
 html {
   font-size: 94.75%;
+
+  @media (min-width: 40rem) {
+      font-size: 125%;
+  }
 }
 
 body {
@@ -33,7 +37,12 @@ body {
   box-shadow: $size-tiny $size-tiny $size-tiny / 2 #ccc;
   width: 90%;
   box-sizing: $box-size;
+
+  @media (min-width: 40rem) {
+      width: $size-default * 30;
+  }
 }
+
 
 .sass-introduction p {
   margin: 0;
@@ -47,6 +56,10 @@ body {
   margin: $size-default * 2 0;
   width: 90%;
   box-sizing: $box-size;
+ 
+  @media (min-width: 40rem) {
+    width: $size-default * 30;
+  }
 }
 
 .section-header {
@@ -88,17 +101,4 @@ body {
   }
 }
 
-@media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
 
-  .container {
-    padding: $size-default * 3 0;
-  }
-
-  .sass-introduction,
-  .sass-details {
-    width: $size-default * 30;
-  }
-}
