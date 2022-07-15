@@ -43,6 +43,7 @@ body {
 }
 
 .sass-introduction {
+  @extend .sass-section;
   box-shadow: $size-tiny $size-tiny $size-tiny / 2 #ccc;
 }
 
@@ -52,6 +53,7 @@ body {
 }
 
 .sass-details {
+  @extend .sass-section;
   margin: $size-default * 2 0;
 }
 

@@ -24,7 +24,7 @@ body {
   padding: 3rem 0;
   box-sizing: border-box; }
 
-.sass-section {
+.sass-section, .sass-introduction, .sass-details {
   border: 0.05rem solid #521751;
   background: #f7e1f6;
   padding: 2rem;
@@ -32,7 +32,7 @@ body {
   width: 90%;
   box-sizing: border-box; }
   @media (min-width: 40rem) {
-    .sass-section {
+    .sass-section, .sass-introduction, .sass-details {
       width: 30rem; } }
 
 .sass-introduction {
